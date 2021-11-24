@@ -1,0 +1,28 @@
+div:hover{
+    background-color: rgb(96, 204, 96);
+}
+.cor1{
+    background-color: yellow;
+}
+
+.cor2{
+    background-color: red;
+}
+
+.cor3{
+    background-color: rgb(93, 93, 212);
+    font-size: 48px;
+}
+
+.cor4{
+    background-color: rgb(31, 31, 39);
+    color: white;
+}
+
+.cor5{
+    background-color: rgb(233, 233, 247);
+}
+
+h3:active{
+     color: rgb(13, 170, 149);
+}
