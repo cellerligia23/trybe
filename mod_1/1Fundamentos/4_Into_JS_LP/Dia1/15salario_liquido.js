@@ -12,28 +12,27 @@ IR (Imposto de Renda)
 4 - De R$ 3.751,06 a R$ 4.664,68: alíquota de 22,5% e parcela de R$ 636,13 a deduzir do imposto
 5 - Acima de R$ 4.664,68: alíquota de 27,5% e parcela de R$ 869,36 a deduzir do imposto. */
 
-const salarioBruto = 2063.94;
+const salarioBruto = 3000;
 let inss = salarioBruto * 8 / 100;
 let inss2 = salarioBruto * 9 / 100;
 let inss3 = salarioBruto * 11 / 100;
-let inss4 = salarioBruto * 8 / 100;
 let ir = salarioBruto * 7.5 / 100;
 let ir2= salarioBruto * 15 / 100;
 let ir3 = salarioBruto * 22.5 / 100;
 let ir4 = salarioBruto * 27.5 / 100;
-let salarioLiquido = 0;
+let salarioLiquidoInss = 0;
+let salarioLiquidoIr = 0;
 
 
 if(salarioBruto <= 1903.98){
-    salarioLiquido = salarioBruto - inss;
-    console.log('Salário liquido a receber', salarioLiquido.toFixed(2))
-     
+    salarioLiquidoInss = salarioBruto - inss;
+    console.log('Salário liquido a receber', salarioLiquidoInss.toFixed(2))
 }
-else if(salarioBruto > 1903.98 && salarioBruto < 2594.92){
-    salarioLiquido = (salarioBruto - inss) - ir;
-    console.log('Salário liquido a receber', salarioLiquido.toFixed(2))
+else if(salarioBruto > 1556.95 && salarioBruto < 2594.92){
+    salarioLiquidoInss = salarioBruto - inss2;
+    console.log('Salário liquido a receber', salarioLiquidoInss.toFixed(2))
 }
-else if(salarioBruto > 1903.98 && salarioBruto < 2594.92){
-    salarioLiquido = (salarioBruto - inss) - ir;
-    console.log('Salário liquido a receber', salarioLiquido.toFixed(2))
+else if(salarioBruto > 2594.93){
+    salarioLiquidoInss = salarioBruto - inss3;
+    console.log('Salário liquido a receber', salarioLiquidoInss.toFixed(2))
 }
