@@ -36,3 +36,8 @@ else if(salarioBruto > 2594.93){
     salarioLiquidoInss = salarioBruto - inss3;
     console.log('Salário liquido a receber', salarioLiquidoInss.toFixed(2))
 }
+
+if(salarioBruto > 2594.93){
+    salarioLiquidoIr  = salarioBruto - ir;
+    console.log('Salário liquido a receber', salarioLiquidoIr .toFixed(2))
+}
