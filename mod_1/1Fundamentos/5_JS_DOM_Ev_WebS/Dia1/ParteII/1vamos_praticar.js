@@ -1,24 +1,22 @@
-/* Agora você! Faça o seguinte:
-1 - Recupere o elemento que contém o título da página e faça algo com ele, 
-como alterá-lo para o nome do seu filme favorito.
-2 - Agora recupere o segundo parágrafo e use sua criatividade para alterá-lo.
-3 - Por fim, recupere o subtítulo e altere-o também. */
+//Jogar a id da TAG deseja para uma const ou let:
+//const paragraph = document.getElementById("paragraph");
+//const pagetitle = document.getElementById("page-title");
+//const subtitle = document.getElementById('subtitle');
 
 
+//Manipular essa const ou let estilizando (style) ou (Modificando o texto):
+pageTitle.style.color = 'blue';
+pageTitle.style.backgroundColor = 'green'
+pageTitle.innerText = 'Filme: Mulher Maravilha'
 
+paragraph.style.color = "red"; // Usa o style para manipular a Estilização
+paragraph.backgroundColor = 'yellow'
+paragraph.innerText = 'Filme de médio para baixo, faltou um pouco mais de ação.' // usa o innerText para manipular o texto
 
-<!DOCTYPE html>
-<html>
-  <body>
-    <header>
-      <h2 id="page-title">Título</h2>
-      <p id="paragraph">Dê uma cor para este parágrafo!</p>
-      <h4 id="subtitle">Subtítulo</h4>
-      <p id="second-paragraph">Segundo parágrafo!</p>
-    </header>
-    <script>
-      const paragraph = document.getElementById("paragraph");
-      paragraph.style.color = "red";
-    </script>
-  </body>
-</html>
+subtitle.style.color = 'yellow';
+subtitle.style.backgroundColor = 'grey'
+subtitle.innerText = 'Filmes da Marvel ou DC'
+
+secondParagraph.style.color = 'red';
+secondParagraph.style.backgroundColor = 'purple'
+secondParagraph.innerText = 'Dicas de Filmes'
